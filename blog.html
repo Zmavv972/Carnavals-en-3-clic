@@ -1,41 +1,16 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 
 <html>
 	
 	<head>
 			<title>Carnaval - Blog</title>
 			<link rel="stylesheet" href="site.css" type="text/css" />
-			<link rel="stylesheet" href="header.css" type="text/css" />
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="Description" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+			<?php include_once 'conf.php'; ?>
 	</head>
 	
 	<body>
 		
-	<nav class="nav1">
-            <a href="index.html" class="titrenav" id="txt1">Carnaval</a>
-            <img class="hamburger" src="hamburger.png" alt="hamburger"/>
-            <div class="liens">
-	            <a href="accueil.html">Accueil</a>
-	            <a href="blog.html">Blog</a>
-	            <a href="sujets.html">Sujets</a>
-	            <a href="contact.html" style="color : #ffc465;">Contactez-nous</a>
-            </div>
-        </nav>
-
-
+		<?php include_once 'header.php'; ?>
 <section class="contenu-blog">
 	<div class="blog-infos">
 		<div class="margin30"></div>
@@ -55,6 +30,15 @@
 	<div class="parallax-image">
 		<img class="rio bresil" src="card1.jpg" alt="Image parallax du Brésil 1">
 	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps/place/S%C3%ADtio+Roberto+Burle+Marx+-+IPHAN/@-23.0231321,
+			-43.5470183,21z/data=!4m15!1m8!3m7!1s0x9bde559108a05b:0x50dc426c672fd24e!2sRio+de+Janeiro,+
+			%C3%89tat+de+Rio+de+Janeiro,+Br%C3%A9sil!3b1!8m2!3d-22.9068467!4d-43.1728965!16zL20vMDZnbXI!
+			3m5!1s0x9be8db7f99bf95:0x45396f02bf56c1fb!8m2!3d-23.0230317!4d-43.5469176!16s%2Fg%2F1tfb36l3?hl=fr&entry=ttu" target="_BLANK">
+			<img src="map.svg">
+			<h1>Brésil</h1>
+		</a>
+	</div>
 	<div class="parallax-text">
 		<h2>De merveilleux paysages</h2>
 		<div class="margin30"></div>
@@ -62,12 +46,19 @@
 			je suis en train de taper la causette avec un ordinateur ! 
 			Je deviens vraiment cinglé ! C’est fini, j’arrête l’informatique !</p>
 			<div class="margin30"></div>
-			<a href="page1.html">DÉCOUVRIR</a>
+			<a href="page1.php">DÉCOUVRIR</a>
 	</div>
 </div>
 <div class="parallax-container bresil">
 	<div class="parallax-image">
 		<img class="rio bresil" src="card2.jpg" alt="Image parallax du brésil 2">
+	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps?sca_esv=576056213&rlz=1C1ONGR_frFR1077FR1077&output=search&q=bresil+jesus&so
+			urce=lnms&entry=mc&sa=X&sqi=2&ved=2ahUKEwiGpuudsY6CAxUlTaQEHe2VAygQ0pQJegQIDRAB" target="_BLANK">
+			<img src="map.svg">
+			<h1>Brésil</h1>
+		</a>
 	</div>
 	<div class="parallax-text">
 		<h2>Éclats Culturels</h2>
@@ -75,12 +66,20 @@
 		<p>Vibrez au son de la Samba et n’hésitez pas à vous joindre aux carnavaleux. 
 			Ce carnaval attire les jeunes fêtards aux quatre coins du monde.</p>
 			<div class="margin30"></div>
-			<a href="page2.html">DÉCOUVRIR</a>
+			<a href="page2.php">DÉCOUVRIR</a>
 	</div>
 </div>
 <div class="parallax-container bresil">
 	<div class="parallax-image">
-		<img class="rio bresil" src="card3.jpg" alt="Image parallax du brésil 2">
+		<img class="rio bresil" src="card3.jpg" alt="Image parallax du brésil 3">
+	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps/place/Rio+de+Janeiro,+%C3%89tat+de+Rio+de+Janeiro
+			,+Br%C3%A9sil/@-22.9137295,-43.61079,11z/data=!3m1!4b1!4m6!3m5!1s0x9bde559108a05b:0x50dc426c672fd24e!8m
+			2!3d-22.9068467!4d-43.1728965!16zL20vMDZnbXI?entry=ttu" target="_BLANK">
+			<img src="map.svg">
+			<h1>Brésil</h1>
+		</a>
 	</div>
 	<div class="parallax-text">
 		<h2>Défilés spectaculaires</h2>
@@ -88,12 +87,19 @@
 		<p> Les défilés de samba au carnaval de Rio de Janeiro sont spectaculaires, 
 			mettant en scène des chars somptueusement décorés et des costumes extravagants.</p>
 			<div class="margin30"></div>
-			<a href="page3.html">DÉCOUVRIR</a>
+			<a href="page3.php">DÉCOUVRIR</a>
 	</div>
 </div>
 <div class="parallax-container venise">
 	<div class="parallax-image">
 		<img class="rio venise" src="card4.jpg" alt="Image parallax de Venise 1">
+	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps/place/Venise,+Italie/@45.4046658,12.2225272,11z/data=!3m1!4b
+			1!4m6!3m5!1s0x477eb1daf1d63d89:0x7ba3c6f0bd92102f!8m2!3d45.4408474!4d12.3155151!16zL20vMDdfcGY?entry=ttu" target="_BLANK">
+			<img src="map.svg">
+			<h1>Venise</h1>
+		</a>
 	</div>
 	<div class="parallax-text">
 		<h2>Élégance et raffinement</h2>
@@ -102,12 +108,19 @@
 			ses somptueux costumes, qui reflètent l'élégance et la sophistication. 
 			Les participants rivalisent pour créer des tenues exquises et mystérieuses.</p>
 			<div class="margin30"></div>
-			<a href="page4.html">DÉCOUVRIR</a>
+			<a href="page4.php">DÉCOUVRIR</a>
 	</div>
 </div>
 <div class="parallax-container venise">
 	<div class="parallax-image">
 		<img class="rio venise" src="card5.jpg" alt="Image parallax de Venise 2">
+	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps/place/Venise,+Italie/@45.4046658,12.2225272,11z/data=!3m1!4b1!4m6!3m5!1s0x477
+			eb1daf1d63d89:0x7ba3c6f0bd92102f!8m2!3d45.4408474!4d12.3155151!16zL20vMDdfcGY?entry=ttu" target="_BLANK">
+			<img src="map.svg">
+			<h1>Venise</h1>
+		</a>
 	</div>
 	<div class="parallax-text">
 		<h2>Tradition et histoire</h2>
@@ -116,12 +129,19 @@
 			Il est imprégné de traditions anciennes et de célébrations authentiques, 
 			ce qui en fait un événement unique dans le monde.</p>
 			<div class="margin30"></div>
-			<a href="page5.html">DÉCOUVRIR</a>
+			<a href="page5.php">DÉCOUVRIR</a>
 	</div>
 </div>
 <div class="parallax-container venise">
 	<div class="parallax-image">
 		<img class="rio venise" src="card10.jpg" alt="Image parallax de Venise 3">
+	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps/place/Venise,+Italie/@45.4046658,12.2225272,11z/data=!3m1!4b1!4m6!3m5!1s0x477eb1
+			daf1d63d89:0x7ba3c6f0bd92102f!8m2!3d45.4408474!4d12.3155151!16zL20vMDdfcGY?entry=ttu" target="_BLANK">
+			<img src="map.svg">
+			<h1>Venise</h1>
+		</a>
 	</div>
 	<div class="parallax-text">
 		<h2>Atmosphère de mystère</h2>
@@ -130,12 +150,19 @@
 			Les participants se cachent derrière des masques élaborés, 
 			créant une ambiance de mystère et d'intrigue tout au long de l'événement.</p>
 			<div class="margin30"></div>
-			<a href="page6.html">DÉCOUVRIR</a>
+			<a href="page6.php">DÉCOUVRIR</a>
 	</div>
 </div>
 <div class="parallax-container antilles">
 	<div class="parallax-image">
 		<img class="rio" src="card7.jpg" alt="Image parallax des Antilles 1">
+	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps/place/Antilles/@15.7773851,-74.1328994,5.25z/data=!4m6!3m5!
+			1s0x11d5f57fdf89d61f:0x35b74e0b2552dbc3!8m2!3d16.6487427!4d-72.1348758!16zL20vMDFsM2x4?entry=ttu" target="_BLANK">
+			<img src="map.svg">
+			<h1>Antilles</h1>
+		</a>
 	</div>
 	<div class="parallax-text">
 		<h2>Musique et danse traditionnelles</h2>
@@ -143,12 +170,20 @@
 		<p>Les carnavals aux Antilles sont imprégnés de musique et de danse traditionnelles, 
 			comme le zouk, le calypso et le gwoka. Cela crée une ambiance festive et authentique.</p>
 			<div class="margin30"></div>
-			<a href="page7.html">DÉCOUVRIR</a>
+			<a href="page7.php">DÉCOUVRIR</a>
 	</div>
 </div>
 <div class="parallax-container antilles">
 	<div class="parallax-image">
 		<img class="umla" src="umla2.jpg" alt="Image parallax des Antilles 2">
+	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps/place/Antilles/@15.7773851,-74.1328994,5
+			.25z/data=!4m6!3m5!1s0x11d5f57fdf89d61f:0x35b74e0
+			b2552dbc3!8m2!3d16.6487427!4d-72.1348758!16zL20vMDFsM2x4?entry=ttu" target="_BLANK">
+			<img src="map.svg">
+			<h1>Antilles</h1>
+		</a>
 	</div>
 	<div class="parallax-text">
 		<h2>Richesse culturelle</h2>
@@ -156,12 +191,19 @@
 		<p> Les carnavals aux Antilles sont l'occasion de célébrer la riche culture créole de la région. 
 			Les défilés mettent en avant les costumes traditionnels et les coutumes locales.</p>
 			<div class="margin30"></div>
-			<a href="page8.html">DÉCOUVRIR</a>
+			<a href="page8.php">DÉCOUVRIR</a>
 	</div>
 </div>
 <div class="parallax-container antilles">
 	<div class="parallax-image">
 		<img class="rio" src="card9.jpg" alt="Image parallax des Antilles 3">
+	</div>
+	<div class="item-svg">
+		<a href="https://www.google.com/maps/place/Antilles/@15.7773851,-74.1328994,5.25z/data=!4m6!3m5!1s0x11d5f57
+			fdf89d61f:0x35b74e0b2552dbc3!8m2!3d16.6487427!4d-72.1348758!16zL20vMDFsM2x4?entry=ttu" target="_BLANK">
+			<img src="map.svg">
+			<h1>Antilles</h1>
+		</a>
 	</div>
 	<div class="parallax-text">
 		<h2>Convivialité et partage</h2>
@@ -169,7 +211,7 @@
 		<p>Les carnavals aux Antilles sont souvent marqués par un esprit de convivialité et de partage. 
 			Les habitants et les visiteurs se réunissent pour célébrer ensemble, déguster des plats locaux et profiter de la camaraderie.</p>
 			<div class="margin30"></div>
-			<a href="page9.html">DÉCOUVRIR</a>
+			<a href="page9.php">DÉCOUVRIR</a>
 	</div>
 </div>
 </div>
@@ -177,41 +219,7 @@
 	<a class="btnall">Toutes les destinations</a>
 </div>
 </section>
-<footer>
-    <nav>
-    	<h1 class="titrenav">Carnaval</h1>
-    	<div class="ensemblefoot">
-    		<div class="pages">
-    		<h3>Pages</h3>
-        <div class="liens2">
-        	<a href="accueil.html">Accueil</a>
-        	<a href="blog.html">Blog</a>
-        	<a href="sujets.html">Sujets</a>
-        	<a href="contact.html">Contact</a>
-        </div>
-        </div>
-        <div class="ressource">
-        	<h3>Ressources</h3>
-        <div class="liens2">
-        	<a href="guide-style.html">Guide style</a>
-        	<a href="licences.html">Licences</a>
-        	<div class="espace"></div>
-        </div>
-        </div>
-        </div>
-    	</div>
-    </nav>
-</footer>
-<div class="star">Copyright © 2023 Mathis • Made with love by Mathis.S</div>
-<div class="troll"><a href="https://youtu.be/oHg5SJYRHA0?feature=shared" target="_blank">Merci d'avoir lu !</a></div>
-<script>
-  const menuHamburger = document.querySelector(".hamburger")
-  const navLinks = document.querySelector(".liens")
-
-  menuHamburger.addEventListener('click',()=>{
-  navLinks.classList.toggle('mobile-menu')
-  })
-</script>
+		<?php include_once 'footer.php'; ?>
 
 <script>
     const btnVenise = document.querySelector(".btn-venise");
