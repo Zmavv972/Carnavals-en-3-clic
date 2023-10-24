@@ -5,12 +5,37 @@
 	<head>
 			<title>Carnaval - Blog</title>
 			<link rel="stylesheet" href="site.css" type="text/css" />
-			<?php include_once 'conf.php'; ?>
+			<link rel="stylesheet" href="header.css" type="text/css" />
+		<	meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		       <meta name="description" content="Description" />
+		       <meta name="viewport" content="width=device-width, initial-scale=1" />
+		       <link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
+	  		  <link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+   			 <link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
 	</head>
 	
 	<body>
+
+<nav class="nav1">
+            <a href="carnaval.php" class="titrenav" id="txt1">Carnaval</a>
+            <img class="hamburger" src="hamburger.png" alt="hamburger"/>
+            <div class="liens">
+	            <a href="accueil.php">Accueil</a>
+	            <a href="blog.php">Blog</a>
+	            <a href="sujets.php">Sujets</a>
+	            <a href="contact.php" style="color : #ffc465;">Contactez-nous</a>
+            </div>
+        </nav>
+
 		
-		<?php include_once 'header.php'; ?>
 <section class="contenu-blog">
 	<div class="blog-infos">
 		<div class="margin30"></div>
@@ -219,7 +244,42 @@
 	<a class="btnall">Toutes les destinations</a>
 </div>
 </section>
-		<?php include_once 'footer.php'; ?>
+		<footer>
+    <nav>
+    	<h1 class="titrenav">Carnaval</h1>
+    	<div class="ensemblefoot">
+    		<div class="pages">
+    		<h3>Pages</h3>
+        <div class="liens2">
+        	<a href="accueil.php">Accueil</a>
+        	<a href="blog.php">Blog</a>
+        	<a href="sujets.php">Sujets</a>
+        	<a href="contact.php">Contact</a>
+        </div>
+        </div>
+        <div class="ressource">
+        	<h3>Ressources</h3>
+        <div class="liens2">
+        	<a href="guide-style.html">Guide style</a>
+        	<a href="licences.html">Licences</a>
+        	<a href="commentaire.php">Commentaire</a>
+        	<div class="espace"></div>
+        </div>
+        </div>
+        </div>
+    	</div>
+    </nav>
+</footer>
+<div class="star">Copyright © 2023 Mathis • Made with love by Mathis.S</div>
+<div class="troll"><a href="https://youtu.be/oHg5SJYRHA0?feature=shared" target="_blank">Merci d'avoir lu !</a></div>
+<script>
+  const menuHamburger = document.querySelector(".hamburger")
+  const navLinks = document.querySelector(".liens")
+
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  })
+</script>
 
 <script>
     const btnVenise = document.querySelector(".btn-venise");
