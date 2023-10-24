@@ -1,0 +1,117 @@
+﻿﻿<!DOCTYPE HTML>
+
+<html>
+	
+	<head>
+			<title>Carnaval 🕺</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<link rel="stylesheet" href="site.css" type="text/css" />
+      <link rel="stylesheet" href="header.css" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		
+			<nav class="nav1">
+            <a href="index.html" class="titrenav" id="txt1">Carnaval</a>
+            <img class="hamburger" src="hamburger.png" alt="hamburger"/>
+            <div class="liens">
+	            <a href="accueil.html">Accueil</a>
+	            <a href="blog.html">Blog</a>
+	            <a href="sujets.html">Sujets</a>
+	            <a href="contact.html" style="color : #ffc465;">Contactez-nous</a>
+            </div>
+        </nav>
+
+
+			
+<div class="carnaval-home">
+  <h2>Carnavals en Un Clic : Une Trilogie de Festivités</h2>
+</div>
+<div class="carnaval-flex">
+  <div class="carnaval-items">
+    <div class="item" id="item1">
+      <h2>Accueil</h2>
+    </div>
+    <div class="item" id="item2">
+      <h2>Blog</h2>
+    </div>
+    <div class="item" id="item3">
+      <h2>Sujets</h2>
+    </div>
+    <div class="item" id="item4">
+      <h2>Contact</h2>
+    </div>
+  </div>
+</div>
+
+<script>
+  var items = document.querySelectorAll('.item');
+
+  items.forEach(function(item) {
+    item.addEventListener('click', function() {
+      if (item.id === 'item1') {
+        window.location.href = 'accueil.html';
+      } else if (item.id === 'item2') {
+        window.location.href = 'blog.html';
+      } else if (item.id === 'item3') {
+        window.location.href = 'sujets.html';
+      } else if (item.id === 'item4') {
+        window.location.href = 'contact.html';
+      }
+    });
+  });
+</script>
+
+				
+<footer>
+    <nav>
+    	<h1 class="titrenav">Carnaval</h1>
+    	<div class="ensemblefoot">
+    		<div class="pages">
+    		<h3>Pages</h3>
+        <div class="liens2">
+        	<a href="accueil.html">Accueil</a>
+        	<a href="blog.html">Blog</a>
+        	<a href="sujets.html">Sujets</a>
+        	<a href="contact.html">Contact</a>
+        </div>
+        </div>
+        <div class="ressource">
+        	<h3>Ressources</h3>
+        <div class="liens2">
+        	<a href="guide-style.html">Guide style</a>
+        	<a href="licences.html">Licences</a>
+        	<div class="espace"></div>
+        </div>
+        </div>
+        </div>
+    	</div>
+    </nav>
+</footer>
+<div class="star">Copyright © 2023 Mathis • Made with love by Mathis.S</div>
+<div class="troll"><a href="https://youtu.be/oHg5SJYRHA0?feature=shared" target="_blank">Merci d'avoir lu !</a></div>
+<script>
+  const menuHamburger = document.querySelector(".hamburger")
+  const navLinks = document.querySelector(".liens")
+
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  })
+</script>
+	</body>
+	
+</html>
