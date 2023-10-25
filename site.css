@@ -849,3 +849,9 @@ footer nav .ensemblefoot {
 	max-width : 400px;
 	height : 400px;
 	}
+
+@media screen and (max-width : 400px) {
+.parallax-container {
+    max-width: 350px;
+}
+}
