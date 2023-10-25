@@ -851,7 +851,7 @@ footer nav .ensemblefoot {
 	}
 
 @media screen and (max-width : 400px) {
-.parallax-container {
-    margin : 0;
+.card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
 }
 }
