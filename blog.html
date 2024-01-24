@@ -48,6 +48,7 @@
 				<a class="btn-venise">Venise</a>
 				<a class="btn-bresil">Brésil</a>
 				<a class="btn-antilles">Antilles</a>
+				<a class="btn-france">France</a>
 			</div>
 	</div>
 <div class="card-grid">
@@ -238,6 +239,24 @@
 			<a href="page9.html">DÉCOUVRIR</a>
 	</div>
 </div>
+	<div class="parallax-container france">
+	<div class="parallax-image">
+		<img class="rio" src="https://i.notretemps.com/1400x787/smart/2022/06/13/dunkerque.jpeg" alt="Image parallax de la France">
+	</div>
+	<div class="item-svg">
+		<a href="https://maps.app.goo.gl/GUkzFk6eTfC5XNEL7" target="_BLANK">
+			<img src="map.svg">
+			<h1>Dunkerque</h1>
+		</a>
+	</div>
+	<div class="parallax-text">
+		<h2>Unique en son genre</h2>
+		<div class="margin30"></div>
+		<p> Le carnaval des enfants. Comme Obélix avec la potion magique, les Dunkerquois tombent dans le chaudron du carnaval dès leur plus jeune âge</p>
+			<div class="margin30"></div>
+			<a href="page9.html">DÉCOUVRIR</a>
+	</div>
+</div>
 </div>
 <div class="all-destinations">
 	<a class="btnall">Toutes les destinations</a>
@@ -283,51 +302,73 @@
     const btnVenise = document.querySelector(".btn-venise");
     const btnBresil = document.querySelector(".btn-bresil");
     const btnAntilles = document.querySelector(".btn-antilles");
+    const btnFrance = document.querySelector(".btn-antilles");
     const containersVenise = document.querySelectorAll(".venise");
     const containersBresil = document.querySelectorAll(".bresil");
     const containersAntilles = document.querySelectorAll(".antilles");
+    const containersFrance = document.querySelectorAll(".france");
     const btnall = document.querySelector(".btnall");
 
     let veniseVisible = false;
     let bresilVisible = false;
     let antillesVisible = false;
+    let franceVisible = false;
 
 		btnall.addEventListener('click', () => {
 			veniseVisible = true;
 			bresilVisible = true;
 			antillesVisible = true;
+			franceVisible = true;
 			toggleVisibility(containersVenise, veniseVisible);
 			toggleVisibility(containersBresil, bresilVisible);
 			toggleVisibility(containersAntilles, antillesVisible);
+			toggleVisibility(containersFrance, franceVisible);
 		});
 
     btnVenise.addEventListener('click', () => {
         veniseVisible = true;
         bresilVisible = false;
         antillesVisible = false;
+	franceVisible = false;
         toggleVisibility(containersVenise, veniseVisible);
         toggleVisibility(containersBresil, bresilVisible);
         toggleVisibility(containersAntilles, antillesVisible);
+	toggleVisibility(containersFrance, franceVisible);
     });
 
     btnBresil.addEventListener('click', () => {
         veniseVisible = false;
         bresilVisible = true;
         antillesVisible = false;
+	franceVisible = false;
         toggleVisibility(containersVenise, veniseVisible);
         toggleVisibility(containersBresil, bresilVisible);
         toggleVisibility(containersAntilles, antillesVisible);
+	toggleVisibility(containersFrance, franceVisible);
     });
 
     btnAntilles.addEventListener('click', () => {
         veniseVisible = false;
         bresilVisible = false;
         antillesVisible = true;
+	franceVisible = false;    
         toggleVisibility(containersVenise, veniseVisible);
         toggleVisibility(containersBresil, bresilVisible);
         toggleVisibility(containersAntilles, antillesVisible);
+	toggleVisibility(containersFrance, franceVisible);
     });
 
+btnFrance.addEventListener('click', () => {
+	veniseVisible = false;
+	bresilVisible = false;
+	antillesVisible = false;
+	franceVisible = true;    
+	toggleVisibility(containersVenise, veniseVisible);
+	toggleVisibility(containersBresil, bresilVisible);
+	toggleVisibility(containersAntilles, antillesVisible);
+	toggleVisibility(containersFrance, franceVisible);
+    });
+	
     function toggleVisibility(containers, isVisible) {
         containers.forEach(container => {
             if (isVisible) {
